@@ -4,7 +4,7 @@
     "keywords": ["Laravel","Helpers","Helper"],
     "require": {
         "php": ">=7.0",
-        "hekmatinasser/verta": "^1.9",
+        "hekmatinasser/verta": "^1.9"
     },
     "authors": [
         {
