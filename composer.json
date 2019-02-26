@@ -1,0 +1,35 @@
+{
+    "name": "shetabit/helper",
+    "description": "This Package helps developers to work with custom helpers",
+    "keywords": ["Laravel","Helpers","Helper"],
+    "require": {
+        "php": ">=7.0",
+        "hekmatinasser/verta": "^1.9",
+        "shetabit/helper": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Hashem Moghaddari",
+            "email": "hashemm364@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shetabit\\Helper\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shetabit\\Helper\\HelperServiceProvider"
+            ],
+            "aliases": {
+                "Helper": "Shetabit\\Helper\\Facades\\Helper"
+            }
+        }
+    }
+}
