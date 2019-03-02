@@ -4,8 +4,9 @@ if (!function_exists('random_password')) {
     /**
      * Generate random password.
      *
-     * @param int $length
+     * @param int    $length
      * @param string $availableSets
+     *
      * @return string
      */
     function random_password(int $length = 9, string $availableSets = 'luds')
@@ -20,6 +21,7 @@ if (!function_exists('persian_slug')) {
      *
      * @param string $string
      * @param string $separator
+     *
      * @return false|mixed|string|string[]|null
      */
     function persian_slug(string $string, string $separator = '-')
@@ -33,6 +35,7 @@ if (!function_exists('fa_to_en_nums')) {
      * Convert all Persian(Farsi) numbers to English.
      *
      * @param string $number
+     *
      * @return mixed
      */
     function fa_to_en_nums(string $number)
