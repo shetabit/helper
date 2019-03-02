@@ -22,8 +22,35 @@ If you want to use the facade, add this to your facades in app.php:
 
 ### List of helpers
 
+* [Random Password](#random-password)
+* [Persian Slug](#persian-slug)
+* [Persian To English Numbers](#persian-to-english-numbers)
 * [Remove Comma](#remove-comma)
 * [Jalali To Gregorian](#jalali-to-gregorian)
+
+### Random Password
+Generate random password.
+```php
+  Helper::randomPassword(); //Output: '9nZnE%3wB'
+  //Or
+  random_password(); //Output: '9nZnE%3wB'
+```
+
+### Persian Slug
+Generate persian slug.
+```php
+  Helper::persianSlug('ایران سرای من'); //Output: 'ایران-سرای-من'
+  //Or
+  persian_slug('ایران سرای من'); //Output: 'ایران-سرای-من'
+```
+
+### Persian To English Numbers
+Convert all Persian(Farsi) numbers to English.
+```php
+  Helper::faToEnNums('۵۶89٤٦'); //Output: '568946'
+  //Or
+  fa_to_en_nums('۵۶89٤٦'); //Output: '568946'
+```
 
 ### Remove Comma
 Remove comma's from value.
@@ -36,7 +63,7 @@ Remove comma's from value.
  ### Jalali To Gregorian
 Convert jalali date to gregorian date.
 ```php
-  Helper::toGregorian('1397/12/11'); //Output: '2018/03/02'
+  Helper::toGregorian('1397/12/11'); //Output: '2018/3/2'
   //Or
-  to_gregorian('1397/12/11') //Output: '2018/03/02'
+  to_gregorian('1397/12/11') //Output: '2018/3/2'
 ```
