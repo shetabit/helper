@@ -9,5 +9,8 @@ class Helper extends Facade
     /**
      * @return string
      */
-    protected static function getFacadeAccessor() { return 'helper'; }
+    protected static function getFacadeAccessor()
+    {
+        return 'helper';
+    }
 }
