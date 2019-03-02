@@ -1,8 +1,8 @@
 # Helper
-##### This Package helps developers to work with custom helpers.
+### This Package helps developers to work with custom helpers.
 
 
-##### Installation
+### Installation
 Require this package with composer:
 ```
 composer require shetabit/helper
@@ -18,12 +18,12 @@ If you want to use the facade, add this to your facades in app.php:
   'Helper' => Shetabit\Helper\Facades::class,
 ```
 
-##### List of helpers
+### List of helpers
 
 * [removeComma](#remove-comma)
-* [toGregorian](#to-gregorian)
+* [toGregorian](#jalali-to-gregorian)
 
-## removeComma
+### Remove Comma
 Remove comma's from value.
 ```php
   Helper::removeComma('5000,000'); //Output: '5000000'
@@ -31,7 +31,7 @@ Remove comma's from value.
   remove_comma('5000,000') //Output: '5000000'
 ```
  
- ## toGregorian
+ ### Jalali To Gregorian
 Convert jalali date to gregorian date.
 ```php
   Helper::toGregorian('1397/12/11'); //Output: '2018/03/02'
