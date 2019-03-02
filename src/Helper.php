@@ -20,16 +20,9 @@ class Helper
 
     /**
      * Convert jalali date to gregorian date.
-<<<<<<< HEAD
      * 
      * @param  string $jDate 
      * @return null|string
-=======
-     *
-     * @param string $jDate
-     *
-     * @return string
->>>>>>> 887ce24ebe1ee8290b5d72241060327179b371c1
      */
     public function toGregorian(string $jDate) : string
     {
