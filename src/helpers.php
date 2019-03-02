@@ -1,10 +1,11 @@
 <?php
 
-if ( ! function_exists('remove_comma')) {
+if (!function_exists('remove_comma')) {
     /**
      * Remove comma's from value.
      *
      * @param string $value
+     *
      * @return string
      */
     function remove_comma(string $value) : string
@@ -13,11 +14,12 @@ if ( ! function_exists('remove_comma')) {
     }
 }
 
-if ( ! function_exists('to_gregorian')) {
+if (!function_exists('to_gregorian')) {
     /**
      * Convert jalali date to gregorian date.
-     * 
-     * @param  string $jDate 
+     *
+     * @param string $jDate
+     *
      * @return string
      */
     function to_gregorian(string $jDate) : string
