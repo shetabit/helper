@@ -13,7 +13,7 @@ If you don't use auto-discovery, add the ServiceProvider to the providers array 
 ```php
   Shetabit\Helper\HelperServiceProvider::class,
 ```
-If you want to use the facade to log messages, add this to your facades in app.php:
+If you want to use the facade, add this to your facades in app.php:
 ```php
   'Helper' => Shetabit\Helper\Facades::class,
 ```
