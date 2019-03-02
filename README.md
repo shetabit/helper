@@ -20,8 +20,8 @@ If you want to use the facade, add this to your facades in app.php:
 
 ### List of helpers
 
-* [removeComma](#remove-comma)
-* [toGregorian](#jalali-to-gregorian)
+* [Remove Comma](#remove-comma)
+* [Jalali To Gregorian](#jalali-to-gregorian)
 
 ### Remove Comma
 Remove comma's from value.
