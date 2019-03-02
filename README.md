@@ -13,7 +13,7 @@ composer require shetabit/helper
 * [toGregorian](#to-gregorian)
 
 ## removeComma
- <p>Remove comma's from value.</p>
+Remove comma's from value.
 ```php
   Helper::removeComma('5000,000'); //Output: '5000000'
   //Or
@@ -21,7 +21,7 @@ composer require shetabit/helper
 ```
  
  ## toGregorian
- <p>Convert jalali date to gregorian date.</p>
+Convert jalali date to gregorian date.
 ```php
   Helper::toGregorian('1397/12/11'); //Output: '2018/03/02'
   //Or
