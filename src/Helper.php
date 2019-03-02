@@ -150,7 +150,7 @@ class Helper
     /**
      * Convert jalali date to gregorian date.
      * 
-     * @param  string $jDate 
+     * @param  string $jDate
      * @return null|string
      */
     public function toGregorian(string $jDate)
