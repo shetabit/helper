@@ -7,6 +7,17 @@ Require this package with composer:
 ```
 composer require shetabit/helper
 ```
+Laravel >=5.5 uses Package Auto-Discovery, so doesn't require you to manually add the ServiceProvider.
+
+If you don't use auto-discovery, add the ServiceProvider to the providers array in config/app.php:
+```php
+  Shetabit\Helper\HelperServiceProvider::class,
+```
+If you want to use the facade to log messages, add this to your facades in app.php:
+```php
+  'Helper' => Shetabit\Helper\Facades::class,
+```
+
 ##### List of helpers
 
 * [removeComma](#remove-comma)
