@@ -177,10 +177,10 @@ class Helper
     /**
      * json_encode() for multibyte characters
      *
-     * @param string $input
+     * @param array $input
      * @return string|string[]|null
      */
-    public function mbJsonEncode(string $input)
+    public function mbJsonEncode(array $input)
     {
         return preg_replace_callback('/\\\\u([0-9a-zA-Z]{4})/', function ($matches) {
             return mb_convert_encoding(pack('H*',$matches[1]), 'UTF-8','UTF-16');

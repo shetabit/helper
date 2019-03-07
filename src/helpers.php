@@ -76,11 +76,11 @@ if (! function_exists('mb_json_encode')) {
     /**
      * json_encode() for multibyte characters
      *
-     * @param string $input
+     * @param array $input
      *
      * @return null|string
      */
-    function mb_json_encode(string  $input)
+    function mb_json_encode(array  $input)
     {
         return app('helper')->mbJsonEncode($input);
     }
