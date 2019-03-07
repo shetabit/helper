@@ -27,10 +27,14 @@ If you want to use the facade, add this to your facades in app.php:
 * [Persian To English Numbers](#persian-to-english-numbers)
 * [Remove Comma](#remove-comma)
 * [Jalali To Gregorian](#jalali-to-gregorian)
+* [Mb Json Encode](#mb-json-encode)
 
 ### Random Password
 Generate random password.
+$availableSets parameter: 'l' => lowercase alphabets, 'u' => uppercase, 'd' => digits, 's' => symbols
 ```php
+  ...randomPassword(int $length = 9, string $availableSets = 'luds');
+  
   Helper::randomPassword(); //Output: '9nZnE%3wB'
   //Or
   random_password(); //Output: '9nZnE%3wB'
@@ -39,6 +43,8 @@ Generate random password.
 ### Persian Slug
 Generate persian slug.
 ```php
+  ...persianSlug(string $string, string $separator = '-')
+  
   Helper::persianSlug('ایران سرای من'); //Output: 'ایران-سرای-من'
   //Or
   persian_slug('ایران سرای من'); //Output: 'ایران-سرای-من'
@@ -47,6 +53,8 @@ Generate persian slug.
 ### Persian To English Numbers
 Convert all Persian(Farsi) numbers to English.
 ```php
+  ...faToEnNums(string $number)
+  
   Helper::faToEnNums('۵۶89٤٦'); //Output: '568946'
   //Or
   fa_to_en_nums('۵۶89٤٦'); //Output: '568946'
@@ -55,6 +63,8 @@ Convert all Persian(Farsi) numbers to English.
 ### Remove Comma
 Remove comma's from value.
 ```php
+  ...removeComma(string $value)
+  
   Helper::removeComma('5000,000'); //Output: '5000000'
   //Or
   remove_comma('5000,000') //Output: '5000000'
@@ -63,7 +73,19 @@ Remove comma's from value.
  ### Jalali To Gregorian
 Convert jalali date to gregorian date.
 ```php
+  ...toGregorian(string $jDate)
+  
   Helper::toGregorian('1397/12/11'); //Output: '2018/3/2'
   //Or
   to_gregorian('1397/12/11') //Output: '2018/3/2'
+```
+
+### Mb Json Encode
+json_encode() for multibyte characters.
+```php
+  ...mbJsonEncode(string $input)
+  
+  Helper::mbJsonEncode(['name' => 'علی', 'family' => 'حمزه ای']); //Output: '{"name":"علی","family":"حمزه ای"}'
+  //Or
+  mb_json_encode(['name' => 'علی', 'family' => 'حمزه ای']) //Output: '{"name":"علی","family":"حمزه ای"}'
 ```
