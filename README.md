@@ -83,7 +83,7 @@ Convert jalali date to gregorian date.
 ### Mb Json Encode
 json_encode() for multibyte characters.
 ```php
-  ...mbJsonEncode(string $input)
+  ...mbJsonEncode(array $input)
   
   Helper::mbJsonEncode(['name' => 'علی', 'family' => 'حمزه ای']); //Output: '{"name":"علی","family":"حمزه ای"}'
   //Or
