@@ -72,9 +72,9 @@ if (!function_exists('to_gregorian')) {
     }
 }
 
-if (! function_exists('mb_json_encode')) {
+if (!function_exists('mb_json_encode')) {
     /**
-     * json_encode() for multibyte characters
+     * json_encode() for multibyte characters.
      *
      * @param array $input
      *
